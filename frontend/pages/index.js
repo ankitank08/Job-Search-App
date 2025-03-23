@@ -36,6 +36,8 @@ export default function Home() {
       console.error("Error fetching jobs:", error);
     }
   };
+  console.log(filteredJobs);
+  
 
   const addJob = (newJob) => {
     setJobList((prevJobs) => [newJob, ...prevJobs]);
